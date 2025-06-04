@@ -1,33 +1,44 @@
-# Study Hours Analyzer
-This repository showcases my journey as a Python developer, featuring a collection of projects that demonstrate my skills in programming, problem-solving, and software development. From beginner exercises to more advanced applications, this portfolio highlights my growth and dedication to mastering Python.
+# 🧠 Study Hours Analyzer
 
-#Study Hours Analyzer Program
+This repository is part of my journey as a Python developer. It features a simple but useful program that calculates and analyzes the number of study hours per week.
 
-#Display a welcome message and a brief description
+The **Study Hours Analyzer** prompts the user to enter how many hours they study each day and then calculates the **total hours** and the **average per day**, providing motivational feedback based on the result.
+
+---
+
+## 🚀 Features
+
+- Asks the user for study hours from Monday to Sunday.
+- Calculates the **total** and **average** study hours.
+- Displays motivational feedback depending on consistency.
+- Written in clean, beginner-friendly Python.
+
+---
+
+## 📄 Sample Code Overview
+
+```python
+# Welcome message
 print("----------Welcome to Study Hours Analyzer!----------")
-print("With this program you can obtain the average of the hours that you study per week.") 
+print("With this program you can obtain the average of the hours that you study per week.")
 
-#Create an empty list to store the hours studied each day
+# List to store the hours
 hours = []
+week_days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 
-#List containing the day of the week
-week_days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"] 
-
-#Function to calculate and display study stadistics
+# Function to calculate and display stats
 def avg():
     for day in week_days:
-        #Asks the how many hours studied on each day
-        data = float(input(f"How many hours you studied on {day.capitalize()}: ")) 
-        hours.append(data) #Add the input to the hours list
-    
-    average = sum(hours)/len(hours)  #Calculate the average hours per day
-    add_total= sum(hours)            #Calculate the total hours studied
+        data = float(input(f"How many hours you studied on {day.capitalize()}: "))
+        hours.append(data)
 
-    print("-" * 30) #Separator for clarity
-    print(f"Total hours studied: {add_total}")
+    average = sum(hours) / len(hours)
+    total = sum(hours)
+
+    print("-" * 30)
+    print(f"Total hours studied: {total}")
     print(f"Average per day: {average:.2f}")
 
-    #Provide feedback based on the average study time
     message = "Feedback: "
     if average >= 4:
         print(f"{message}Great consistency!")
@@ -36,5 +47,12 @@ def avg():
     else:
         print(f"{message}You need to study more!")
 
-#Call the function to run the analysis
+# Run the function
 avg()
+```
+python study_hours_analyzer.py
+Michelle Portilla (Python Developer)
+
+---
+
+
