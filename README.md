@@ -1,4 +1,4 @@
-# Michelle-Python-Projects
+# Study Hours Analyzer
 This repository showcases my journey as a Python developer, featuring a collection of projects that demonstrate my skills in programming, problem-solving, and software development. From beginner exercises to more advanced applications, this portfolio highlights my growth and dedication to mastering Python.
 
 #Study Hours Analyzer Program
